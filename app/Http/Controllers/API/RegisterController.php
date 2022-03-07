@@ -19,6 +19,7 @@ class RegisterController extends Controller
             'email' => 'required|email',
             'password' => 'required',
             'c_password' => 'required|same:password',
+            'role' => 'required',
         ]);
  
         if ($validator->fails()) {
@@ -30,6 +31,7 @@ class RegisterController extends Controller
         $user = User::create($input);
         $success['token'] =  $user->createToken('MyApp')->accessToken;
         $success['name'] =  $user->name;
+        $success['role'] =  $user->role;
  
         return (new BaseController)->sendResponse($success, 'User registered successfully.');
     }
@@ -41,11 +43,22 @@ class RegisterController extends Controller
             $user = auth()->user();
             $success['token'] =  $user->createToken('MyApp')->accessToken;
             $success['name'] =  $user->name;
- 
+            $success['role'] =  $user->role;
+             
             return (new BaseController)->sendResponse($success, 'User login successfully.');
         } else {
             return (new BaseController)->sendError('Unauthorised.', ['error'=>'Unauthorised']);
         }
+    }
+
+    public function logout(Request $request)
+    {
+        $user = auth()->user();
+        dd($user);
+        $token = $request->user()->token();
+        $token->revoke();
+        $response = 'You have been succesfully logged out!';
+        return (new BaseController)->sendResponse($response, 'User logout successfully.');
     }
 
 }

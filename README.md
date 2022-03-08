@@ -12,23 +12,23 @@
 # API Documentation
 ## Endpoints:
 
- User registration:                           /api/register
- User Login:                                  /api/login
- User Logout:                                 /api/logout
+ User registration:                           /api/register   
+ User Login:                                  /api/login    
+ User Logout:                                 /api/logout     
 
- Get all products:                            /api/products              
- Get all products of a category:              /api/products/{category_id}
- Get single product by id:                    /api/single-product/{id}
- Get all categories:                          /api/categories
- Get single category by id:                   /categories/{id}
+ Get all products:                            /api/products                 
+ Get all products of a category:              /api/products/{category_id}      
+ Get single product by id:                    /api/single-product/{id}     
+ Get all categories:                          /api/categories    
+ Get single category by id:                   /categories/{id}     
 
- Add new product:                             /api/add-product
- Add multiple products(for bulk operations):  /api/add-products
- Update a product:                            /api/update-product/{id}
- Delete a product:                            /api/delete-product/{id}
- Add new category:                            /api/add-category
- Update a category:                           /api/update-category/{id}
- Delete a category:                           /api/delete-category/{id}
+ Add new product:                             /api/add-product   
+ Add multiple products(for bulk operations):  /api/add-products    
+ Update a product:                            /api/update-product/{id}    
+ Delete a product:                            /api/delete-product/{id}     
+ Add new category:                            /api/add-category     
+ Update a category:                           /api/update-category/{id}      
+ Delete a category:                           /api/delete-category/{id}     
 
 ## Data formats that will be sent with Request body must be JSON type with the following formats:
 

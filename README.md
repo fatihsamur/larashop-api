@@ -63,27 +63,27 @@
 
 ## add multiple products with bulk route data:
 {
-   "products": [
+   "products": [   
     {
     "name": "sample product1",
     "category_id": "1",
     "price":"123",
     "description":"lorem ipsum dolor",
     "image":"www.imagelink.com"
-    },
+    },   
     {
     "name": "sample product2",
     "category_id": "2",
     "price":"123",
     "description":"lorem ipsum dolor",
     "image":"www.imagelink.com"
-    },
+    },   
     {
     "name": "sample product3",
     "category_id": "1",
     "price":"123",
     "description":"lorem ipsum dolor",
     "image":"www.imagelink.com"
-    }
+    }   
    ]
 }

@@ -62,7 +62,7 @@
 }
 
 ## add multiple products with bulk route data:
-{
+{   
    "products": [   
     {
     "name": "sample product1",

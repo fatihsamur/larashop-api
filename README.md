@@ -3,7 +3,7 @@
 ## This is a simple Ecommerce REST API that have basic CRUD operations of an ecommerce shop.
 
 # For installing the application to your local environment:
-## clone the repository to your machine
+ clone the repository to your machine
 ## open the directory of project and install the dependencies via "composer install"
 ## make database connections on .env file
 ## make migrations via "php artisan migrate"
